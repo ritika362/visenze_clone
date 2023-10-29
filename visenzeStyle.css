@@ -1,0 +1,404 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  .navigation {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 96.8%;
+    position: sticky;
+    height: 50px;
+    top: 0;
+    z-index: 999;
+  }
+
+  .logo {
+    height: 37px;
+    width: 30%;
+  }
+  
+  .logo img {
+    height: 37px;
+    width: 150px;
+    padding-left: 85px;
+  }
+  .navbar a {
+    text-decoration: none;
+    color: #333;
+    margin: 0 1%;
+
+  }
+
+  .navbar a:hover {
+    color: #007bff; /* Change the color on hover if desired */
+  }
+
+  /* Align the navbar to the right */
+  .navbar {
+    margin-left: 10px;
+    width:65%;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+  }
+
+  .navbar .btn{
+    background: linear-gradient(90deg,#47afff 0,#0074ff 100%);
+  }
+
+  .navbar .btn:hover{
+    background: linear-gradient(90deg,#0074ff 0, #47afff 100%);
+  }
+
+  .btn {
+    background-color: #47afff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .btn:hover {
+    background-color: #0056b3; /* Darker shade on hover if desired */
+  }
+  .video-container {
+    width: 100%;
+    margin: 0px auto;
+    text-align: center;
+  }
+  
+  .slider {
+    width: 100%; /* Set the width to the viewport width */
+    overflow: hidden;
+    
+  }
+
+  .slides {
+    /* white-space: nowrap; */
+    white-space: nowrap;
+    display: flex;
+    flex-direction: row;
+    animation: slide 20s linear infinite;
+  }
+  .slide {
+    display: inline-block;
+
+    width: 100vw; /* Set the width to the viewport width */
+  }
+
+  .slide img {
+    width: 215px;
+    height: 75px;
+  }
+
+  @keyframes slide {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  video {
+    height: 60%;
+    width: 100%;
+    object-fit: fill;
+  }
+
+  .card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:max-content;
+    margin: 0;
+    overflow: hidden;
+    width: 100%;
+  }
+  .card {
+    width: 290px;
+    height: 300px;
+    background-color: #fff;
+    border: 1px;
+    border-radius: 10px;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+    text-align: left;
+    padding: 25px;
+    margin: 0 10px;
+    overflow: hidden;
+  }
+  .text {
+    font-size: 40px;
+    color: #007bff;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+  }
+
+.section3{
+    background-color:#f0f9ff;
+    width:  100%;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    height: auto;
+    padding-block: 10px;
+}
+
+.box1{
+    color: #47afff;
+    font-weight: 700;
+    font-size: 35px;
+}
+
+.box2{
+    font-weight:bold;
+    font-size: 18px;
+}
+
+.box3{
+    font-weight: light;
+    font-size: 18px;
+}
+
+.section3 img{
+    width: 100%;
+    margin-top: 20px;
+}
+
+.section4{
+  font-size: 18px;
+  margin-left: 40px;
+  padding: 100px;
+}
+
+.head{
+  font-weight: 700;
+  font-size: 35px;
+}
+
+.section5{
+  background-color:#deeffc;
+    width:  100%;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    height:500px;
+    padding-block: 10px;  
+}
+
+.blog{
+  display: flex;
+  width: 100;
+  padding-inline: 100px;
+}
+
+.box{
+  padding-inline: 20px;
+  text-decoration: none;
+  color: black;
+  text-align: left;
+  font-weight: bold;
+  width: 100%;
+  height: 100%;
+}
+
+.box img{
+  width: 100%;
+  height: 100%;
+  transition: transform .2s;
+}
+
+.box img:hover{
+  transform: scale(1.1);
+}
+
+.box p:hover{
+  text-decoration: underline;
+}
+
+.section6{
+  font-size: 18px;
+  margin-left: 40px;
+  padding: 100px;
+}
+
+.section7{
+  background-color: #e1effc;
+  padding: 50px;
+  display: flex;
+}
+
+.swipe{
+  background-color: white;
+  margin-inline: 15px ;
+  border-radius: 25px;
+  padding: 40px;
+  width: 50%;
+  height: 200px;
+}
+
+.quote{
+  font-size: 15px;
+  line-height: 25px;
+}
+
+.name{
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 5px;
+}
+
+.designation{
+  font-size: 14px;
+  font-weight: 400;
+  color: gray;
+  font-style: italic;
+}
+
+.end{
+  background-color: #242424;
+  text-align: center;
+  padding: 50px;
+}
+
+.connect{
+  color: white;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 40px;
+}
+
+.social{
+  display: flex;
+  margin-inline: 40%;
+}
+
+.circle{
+  background-color: black;
+  padding: 5px;
+  margin: 10px;
+  border-radius: 100px;
+  height: 20px;
+  width: 20px;
+}
+
+.circle:hover{
+  background-color:#007bff;
+}
+
+.content{
+  display: flex;
+  text-align: center;
+  margin: 5%;
+}
+
+.col{
+  text-align: left;
+  margin: 40px;
+}
+
+.col h3{
+  color: white;
+}
+
+.col a{
+  text-decoration: none;
+  color: white;
+  font-size: 12px;
+  line-height: 50px;
+}
+
+.col a:hover{
+  text-decoration: underline;
+}
+
+
+.footer{
+  background-color: #1a1a1a;
+  color: #bdbdbd;
+  display: flex;
+  padding: 20px;
+  text-align: center;
+  padding-inline: 27%;
+  
+}
+
+.footer a{
+  color: #bdbdbd;
+  text-decoration: none;
+}
+
+.footer a:hover{
+  text-decoration: underline;
+}
+
+.last{
+  margin: 20px
+}
+
+
+
+
+@media (max-width : 1200px) {
+  div.navbar{
+    display: none;
+  }
+
+  div.video-container{
+    height: 50%;
+  }
+
+  div.card-container{
+    flex-direction: column;
+  }
+  
+  div.section4{
+    font-size: 18px;
+    margin-block: 40px;
+    padding: 20px;
+  }
+
+  div.section5{
+    height: auto;
+  }
+  div.blog{
+    flex-direction: column;
+    
+  }
+div.box{
+  width: 100%;
+  height: 100%;
+}
+  div.box img{
+    width:30px;
+    height: 30px;
+  }
+
+  div.section6{
+    font-size: 18px;
+    margin-block: 40px;
+    padding: 0px;
+  }
+
+  div.swipe{
+    height: auto;
+  }
+
+  div.swipe .name{
+    line-height: 40px;
+  }
+
+  div.content{
+    flex-direction: column;
+  }
+
+  div.footer{
+    flex-direction: column;
+  }
+}
+
